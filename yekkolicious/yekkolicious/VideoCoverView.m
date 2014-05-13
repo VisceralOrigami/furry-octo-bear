@@ -23,7 +23,7 @@
 
 - (void)didTap:(UIGestureRecognizer *)gestureRecognizer {
     
-    CGPoint tapPoint = [gestureRecognizer locationOfTouch:0 inView:self];
+    //CGPoint tapPoint = [gestureRecognizer locationOfTouch:0 inView:self];
     
 }
 
