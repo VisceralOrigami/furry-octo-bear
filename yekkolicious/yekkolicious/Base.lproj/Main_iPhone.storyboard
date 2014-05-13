@@ -16,6 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BCi-88-2hO" customClass="VideoCoverView">
+                                <rect key="frame" x="20" y="20" width="280" height="440"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VZA-oP-egX">
                                 <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,14 +29,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="BCi-88-2hO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="2ew-gT-oDf"/>
+                            <constraint firstItem="BCi-88-2hO" firstAttribute="top" secondItem="VZA-oP-egX" secondAttribute="top" id="AtE-qC-Krp"/>
                             <constraint firstItem="VZA-oP-egX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="SzS-7P-Uit"/>
                             <constraint firstAttribute="bottom" secondItem="VZA-oP-egX" secondAttribute="bottom" id="VcT-as-dDx"/>
                             <constraint firstAttribute="trailing" secondItem="VZA-oP-egX" secondAttribute="trailing" id="cyM-jK-YLe"/>
+                            <constraint firstAttribute="bottom" secondItem="BCi-88-2hO" secondAttribute="bottom" constant="20" symbolic="YES" id="dzq-jv-pn7"/>
+                            <constraint firstItem="BCi-88-2hO" firstAttribute="centerX" secondItem="VZA-oP-egX" secondAttribute="centerX" id="qEd-GT-eRZ"/>
                             <constraint firstItem="VZA-oP-egX" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" id="zBZ-XR-3hW"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="webView" destination="VZA-oP-egX" id="CSC-u1-mvk"/>
+                        <outlet property="videoCover" destination="BCi-88-2hO" id="DoF-5E-Jhq"/>
+                        <outlet property="webView" destination="VZA-oP-egX" id="UPN-HV-KRV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

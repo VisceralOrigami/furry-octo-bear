@@ -11,5 +11,7 @@
 @interface VideoCoverView : UIView
 
 @property (nonatomic, strong) UITapGestureRecognizer * tapRecognizer;
+@property (nonatomic, strong) UIImage * rippleImage;
+@property (nonatomic,strong) NSArray *imageArray;
 
 @end

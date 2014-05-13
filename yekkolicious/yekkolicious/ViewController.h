@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VideoCoverView.h"
 
 @interface ViewController : UIViewController <UIWebViewDelegate>
 
 @property (nonatomic, strong) IBOutlet UIWebView * webView;
+@property (nonatomic, strong) IBOutlet VideoCoverView *videoCover;
 
 @end
