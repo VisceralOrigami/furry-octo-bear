@@ -1,0 +1,1 @@
+javascript:(function(){if(document.location.href.indexOf('http')===0)document.location.href=document.location.href.replace(/^http/,'yekkolicious');})();
