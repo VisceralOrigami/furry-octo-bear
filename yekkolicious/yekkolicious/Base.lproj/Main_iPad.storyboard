@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2va-31-fkB">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2va-31-fkB">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -26,6 +26,12 @@
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2va-31-fkB" secondAttribute="trailing" id="2Ci-wr-uk8"/>
+                            <constraint firstAttribute="bottom" secondItem="2va-31-fkB" secondAttribute="bottom" id="DlM-b1-s9B"/>
+                            <constraint firstItem="2va-31-fkB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TSV-LT-zAd"/>
+                            <constraint firstItem="2va-31-fkB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WrA-Lz-F1d"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="webView" destination="2va-31-fkB" id="Qhn-tu-bkg"/>

@@ -13,16 +13,22 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VZA-oP-egX">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VZA-oP-egX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VZA-oP-egX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="SzS-7P-Uit"/>
+                            <constraint firstAttribute="bottom" secondItem="VZA-oP-egX" secondAttribute="bottom" id="VcT-as-dDx"/>
+                            <constraint firstAttribute="trailing" secondItem="VZA-oP-egX" secondAttribute="trailing" id="cyM-jK-YLe"/>
+                            <constraint firstItem="VZA-oP-egX" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="zBZ-XR-3hW"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="webView" destination="VZA-oP-egX" id="CSC-u1-mvk"/>
@@ -35,6 +41,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
