@@ -16,25 +16,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2va-31-fkB">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I5f-7R-dPR">
+                                <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="I0u-yK-DHx"/>
-                                </connections>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="2va-31-fkB" secondAttribute="trailing" id="2Ci-wr-uk8"/>
-                            <constraint firstAttribute="bottom" secondItem="2va-31-fkB" secondAttribute="bottom" id="DlM-b1-s9B"/>
-                            <constraint firstItem="2va-31-fkB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TSV-LT-zAd"/>
-                            <constraint firstItem="2va-31-fkB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WrA-Lz-F1d"/>
+                            <constraint firstItem="I5f-7R-dPR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" symbolic="YES" id="FOa-jP-gLi"/>
+                            <constraint firstAttribute="bottom" secondItem="I5f-7R-dPR" secondAttribute="bottom" id="Pal-pR-ghF"/>
+                            <constraint firstItem="I5f-7R-dPR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gmb-NG-Yrg"/>
+                            <constraint firstAttribute="trailing" secondItem="I5f-7R-dPR" secondAttribute="trailing" id="zkz-85-E5P"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="webView" destination="2va-31-fkB" id="Qhn-tu-bkg"/>
+                        <outlet property="webView" destination="I5f-7R-dPR" id="LuU-NG-6Lj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
